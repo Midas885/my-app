@@ -1,4 +1,6 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
+
+const { width } = Dimensions.get('window');
 
 export const colors = {
   primary: '#4a6da7',
@@ -77,6 +79,7 @@ export const styles = StyleSheet.create({
     marginBottom: 10,
   },
   title: {
+    alignSelf: 'center',
     fontSize: 24,
     fontWeight: '600',
     color: colors.text,
@@ -130,7 +133,6 @@ export const styles = StyleSheet.create({
     fontWeight: '600'
   },
   button: {
-    flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 10,
   },
@@ -198,6 +200,59 @@ export const styles = StyleSheet.create({
     paddingVertical: 8,
     borderBottomWidth: 1,
     borderBottomColor: '#eee',
+    color: '#34495e',
+  },
+  videoContainer: {
+    borderRadius: 12,
+    overflow: 'hidden',
+    marginBottom: 25,
+    elevation: 5,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    backgroundColor: '#000',
+  },
+  video: {
+    width: '100%',
+    height: width * 0.5625,
+  },
+  controls: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  progressBarContainer: {
+    height: 3,
+    backgroundColor: 'rgba(255,255,255,0.3)',
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+  },
+  progressBar: {
+    height: '100%',
+    backgroundColor: '#e74c3c',
+  },
+  description: {
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    padding: 20,
+    elevation: 3,
+  },
+  descriptionTitle: {
+    fontSize: 20,
+    fontWeight: '600',
+    color: '#2c3e50',
+    marginBottom: 10,
+  },
+  descriptionText: {
+    fontSize: 16,
+    lineHeight: 24,
     color: '#34495e',
   },
 });

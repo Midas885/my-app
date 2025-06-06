@@ -1,7 +1,7 @@
 
 
-import React, { useState } from 'react';
-import { View, Text, Button, } from 'react-native';
+import { useState } from 'react';
+import { View, Text, Button, ScrollView, } from 'react-native';
 import CustomInput from '../../components/CustomInput';
 import MenuButton from '../../components/MenuButton';
 import { styles, colors} from '../../theme/styles'; 
@@ -9,12 +9,12 @@ import { styles, colors} from '../../theme/styles';
 
 export default function NumberTranslator() {
     return (
-        <View contentContainerStyle={styles.scrollContainer}>
+        <ScrollView contentContainerStyle={styles.scrollContainer}>
             <View style={styles.ntContainer}>
                 <MenuButton />
                 <TraductorNumeros />
             </View>
-        </View>
+        </ScrollView>
     );
 }
 
@@ -95,7 +95,7 @@ const TraductorNumeros = () => {
         title="Traducir" 
         onPress={handleTraducir} 
         disabled={!numero}
-      />
+        />
       </View>
       
     </View>

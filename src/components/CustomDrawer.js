@@ -42,6 +42,13 @@ const CustomDrawer = ({ navigation }) => {
                 >
                     <Text style={styles.menuItemText}>Tabla de multiplicar</Text>
                 </TouchableOpacity>
+                
+                <TouchableOpacity
+                    style={styles.menuItem}
+                    onPress={() => navigation.navigate('Experiencia Personal')}
+                >
+                    <Text style={styles.menuItemText}>Experiencia Personal</Text>
+                </TouchableOpacity>
 
             </View>
         </View>

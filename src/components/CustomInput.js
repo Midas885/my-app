@@ -1,6 +1,5 @@
 
 
-import React from "react";
 import { TextInput, View, Text } from "react-native";
 import { styles, colors } from '../theme/styles';
 
@@ -15,7 +14,7 @@ const CustomInput = ({
 }) => {
     return (
         <View style={styles.inputContainer}> 
-            {label && <Text style={styles.label}>{label}</Text>} {/* Corregido {label} */}
+            {label && <Text style={styles.label}>{label}</Text>} 
             
             <TextInput
                 style={[

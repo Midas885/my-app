@@ -20,7 +20,8 @@
         "foregroundImage": "./src/assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.ax1.myapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -29,6 +30,11 @@
       "eas": {
         "projectId": "aed36e7c-266b-46ce-972b-5a39173fdd95"
       }
-    }
+    },
+    "plugins": [
+      "react-native-video",
+      "expo-video",
+      "expo-audio"
+    ]
   }
 }
